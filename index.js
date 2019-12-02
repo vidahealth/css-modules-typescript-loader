@@ -27,6 +27,8 @@ const cssModuleToInterface = (cssModuleKeys) => {
     .map(key => `  ${key}: string`)
     .join('\n');
 
+  console.log(interfaceFields)
+
   return `interface CssExports {\n${interfaceFields}\n}`;
 };
 
